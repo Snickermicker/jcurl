@@ -28,7 +28,7 @@
 
     <properties>
         <file.encoding>utf-8</file.encoding>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
 
         <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
         <ci-build-id>${env.BUILD_ID}</ci-build-id>
@@ -37,8 +37,8 @@
         <ci-build-time>${maven.build.timestamp}</ci-build-time>
         <ci-svn-revision>${env.SVN_REVISION}</ci-svn-revision>
 
-        <slf4j.version>1.7.18</slf4j.version>
-        <logback.version>1.1.6</logback.version>
+        <slf4j.version>1.7.33</slf4j.version>
+        <logback.version>1.2.10</logback.version>
         <spring.version>4.2.5.RELEASE</spring.version>
         <netty.version>4.0.33.Final</netty.version>
     </properties>
@@ -125,7 +125,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.4</version>
+            <version>1.18.22</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -197,7 +197,7 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.2</version>
+            <version>4.5.13</version>
             <exclusions>
                 <exclusion>
                     <groupId>commons-logging</groupId>
@@ -208,7 +208,7 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpasyncclient</artifactId>
-            <version>4.1</version>
+            <version>4.1.5</version>
             <exclusions>
                 <exclusion>
                     <groupId>commons-logging</groupId>
@@ -225,22 +225,6 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore-nio</artifactId>
             <version>4.4.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.5.2</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpasyncclient-cache</artifactId>
-            <version>4.1</version>
         </dependency>
 <!--
         <dependency>
